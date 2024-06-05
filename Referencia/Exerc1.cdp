@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+void TrocaValores(int &x, int &y);
+
+int main() {
+    int x=5;
+    int y=10;
+
+    cout <<"Antes da troca: x = "<<x<<" y = "<<y<<endl;
+
+    TrocaValores(x,y);
+
+    cout <<"Depois da troca: x = "<<x<<" y = "<<y<<endl;
+    return 0;
+}
+
+void TrocaValores(int &x, int &y){
+    int aux=x;
+    x=y;
+    y=aux;
+}
